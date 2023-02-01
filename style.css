@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "heroFont";
+  src: url("assets/fonts/Knicknack\ Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "ceraRound";
+  src: url("assets/fonts/FONTSPRINGDEMO-CeraRoundProRegular.woff")
+    format("truetype");
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+body {
+  background-image: url("assets/img/Virtual\ reality.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "ceraRound", sans-serif;
+}
+
+body .redup {
+  position: absolute;
+  background-color: black;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+}
+
+.navbar ul li a {
+  font-family: "ceraRound", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #1c0058;
+  z-index: 99;
+}
+
+.jumbotron {
+  height: 100vh;
+  position: relative;
+  padding-top: 200px;
+}
+
+.jumbotron .text-hero {
+  font-size: 80px;
+  font-family: "heroFont", sans-serif;
+  color: #fff;
+  z-index: 99;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron p {
+  line-height: 28px;
+  font-size: 19px;
+}
+
+/* ----------------------- informasi ----------------- */
+#informasi {
+  background-color: #f9f2fe;
+}
+
+#informasi .card {
+  width: 400px;
+  overflow: hidden;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#informasi h4 {
+  color: #1c0058;
+  font-family: "heroFont", sans-serif;
+  font-size: 30px;
+}
+
+#informasi p {
+  line-height: 30px;
+  color: #1c0058;
+  font-size: 18px;
+}
+
+/* ------------------------ Image 360 ---------------------- */
+
+#vr-images h2 {
+  font-family: "heroFont", sans-serif;
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+#vr-images .card {
+  margin-top: 100px;
+}
+
+#vr-images img {
+  position: absolute;
+  top: -70px;
+  height: 70%;
+}
+
+#vr-images .card-body .card-title {
+  margin-top: 190px;
+  font-family: "heroFont", sans-serif;
+  color: #1c0058;
+  letter-spacing: 1px;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+#vr-images .btn {
+  margin-top: 10px;
+  width: 100px;
+  color: #fff;
+  letter-spacing: 1.5px;
+  background-color: #d800da;
+  border: none;
+  font-family: "heroFont", sans-serif;
+}
+
+#vr-images .btn:hover {
+  background-color: #9a079c;
+}
+
+/* #vr-images {
+  background-image: url("assets/img/Virtual\ reality.jpg");
+  background-size: cover;
+  background-position: 0px, -20px;
+  background-attachment: fixed;
+} */
+
+/* ------------------------video 360 ---------------------- */
+#vr-video {
+  background-color: #f9f2fe;
+}
+
+#vr-video h2 {
+  font-family: "heroFont", sans-serif;
+  color: #1c0058;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+#vr-video .card {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+#vr-video .card-body .card-title {
+  margin-top: 10px;
+  font-family: "heroFont", sans-serif;
+  color: #1c0058;
+  letter-spacing: 1px;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+#vr-video .btn {
+  margin-top: 10px;
+  width: 100px;
+  color: #fff;
+  letter-spacing: 1.5px;
+  background-color: #d800da;
+  border: none;
+  font-family: "heroFont", sans-serif;
+}
+
+#vr-video .btn:hover {
+  background-color: #9a079c;
+}
+
+/* text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5); */

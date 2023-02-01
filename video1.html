@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Virtual Reality</title>
+    <!-- A-Frame -->
+    <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+
+    <script>
+      AFRAME.regiterComponent("play-pause", {
+        init: function () {
+          var myVideo = document.querySelector("#gorila");
+          var videoControls = document.querySelector("#videoControls");
+          this.el.addEventListener("click", function () {
+            if (myVideo.paused) {
+              myVideo.play();
+              videoControls.setAttribute("src", "#pause");
+            } else {
+              myVideo.pause();
+              videoControls.setAttribute("src", "#play");
+            }
+          });
+        },
+      });
+    </script>
+  </head>
+
+  <body>
+    <a-scene>
+      <a-assets>
+        <!-- Assets -->
+        <img id="play" src="assets/img/play.png" />
+        <img id="pause" src="assets/img/pause.png" />
+        <video
+          id="gorila"
+          src="assets/videos/gorila.mp4"
+          loop="true"
+          autoplay
+        ></video>
+      </a-assets>
+
+      <!-- Camera -->
+      <a-camera>
+        <a-cursor></a-cursor>
+      </a-camera>
+
+      <!-- 360 Video -->
+      <a-videosphere src="#gorila" rotation="0 -90 0"></a-videosphere>
+
+      <!-- Play/Pause -->
+      <a-image
+        id="videoControls"
+        src="#play"
+        position="0 1 -2"
+        scale="0.4 0.4 2"
+        play-pause
+      ></a-image>
+    </a-scene>
+  </body>
+</html>
